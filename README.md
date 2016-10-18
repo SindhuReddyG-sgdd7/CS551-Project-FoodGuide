@@ -13,13 +13,12 @@ Team Members:
 
 This is created for the Course work of CS 5551.
 
-Implemented:
+Documentation Links:
+
 <ul>
-<li>Social login using Google and Facebook</li>
-<li>Speech to text</li>
-<li>Text to speech</li>
-<li>Auto population of data</li>
-<li>Restaurant Search</li>
-<li>Menu and items can be retreived for restaurant selected</li>
-<li>Reviews of restaurant selected</li>
+<li>Project Proposal: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Projectproposal.pdf</li>
+<li>Increment 1: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/ProjectIncrement1.pdf</li>
+<li>Increment 2: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/Project%20Increment%202.pdf</li>
 </ul>
+
+Wiki Page: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/wiki/SmartEating
