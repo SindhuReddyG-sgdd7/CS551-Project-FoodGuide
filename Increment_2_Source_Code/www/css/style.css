@@ -1,0 +1,61 @@
+
+.button{
+background-color: #85C1E9;
+}
+
+.msg{
+color: blueviolet
+}
+
+.display{
+color: green;
+}
+
+.error{
+color: red;
+}
+
+.barc{
+background-color: #76D7C4;
+    background-image: url(https://static1.squarespace.com/static/54ced80ee4b0aa862f974cbf/t/57b22057ff7c50dc3b52cc12/1471291487984/Use+smart+goals+for+healthy+eating+-+Dr.+David+Samadi);
+	background-size: cover;
+  -webkit-filter: blur(0px);
+}
+
+.list.list-inset{
+    
+}
+
+.bar.bar-stable .title {   
+    text-decoration-color: navy;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+    border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.inputbox {
+    position: relative;
+}
+
+div.VenueList {
+    position: relative;
+}
+
+div.menuItems {
+    position: relative;
+}
+
+.kge-search-picker {
+            width: 20px;
+        }
