@@ -13,31 +13,31 @@ smartEatingApp.run(function($ionicPlatform) {
 
 smartEatingApp.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
+    $stateProvider
 
- .state('Login', {
+    .state('Login', {
       url: '/login',    
       templateUrl: 'templates/Login.html',
       controller: 'LoginController'      
     })
   
-  .state('Register', {
+   .state('Register', {
     url: '/register',
     templateUrl: 'templates/Registration.html',
     controller: 'RegistrationController'
-  })
+    })
   
-  .state('Home', {
+    .state('Home', {
       url: '/home',    
       templateUrl: 'templates/Home.html',
       controller: 'HomeController'      
     });
 
-  $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/login');
 
-});
+    });
 
-smartEatingApp.controller("RegistrationController", function($scope,$http, $state, $httpParamSerializerJQLike) {
+    smartEatingApp.controller("RegistrationController", function($scope,$http, $state, $httpParamSerializerJQLike) {
     
     console.log("Register");
      $scope.createUser = function() {
@@ -69,14 +69,14 @@ smartEatingApp.controller("RegistrationController", function($scope,$http, $stat
             $state.go("Login");
                 })
         .error(function() {
-  alert("error");
+            alert("error");
             $state.go("Login");
-})
+    })
      }    
-});
+    });
 
-smartEatingApp.controller("LoginController", function($scope,$http, $state, $httpParamSerializerJQLike,$q) {
-console.log("Login");
+    smartEatingApp.controller("LoginController", function($scope,$http, $state, $httpParamSerializerJQLike,$q) {
+    console.log("Login");
      
     
      $scope.login = function(username, password) {
@@ -121,9 +121,9 @@ console.log("Login");
       firstName : "Sindhu",
       lastName : "Golconda"
     };
-  };
+    };
 
-  return {
+    return {
     // Get the Singleton instance if one exists
     // or create one if it doesn't
     getInstance: function () {
@@ -132,8 +132,8 @@ console.log("Login");
       }
       return instance;
     }
-  };
-})(); */
+    };
+    })(); */
         alert("Login Succesful!")
                   $state.go("Home");
                     } else {
@@ -145,13 +145,13 @@ console.log("Login");
      }
     
     
-  $scope.register = function() {
+    $scope.register = function() {
          $state.go("Register");
      }
      
-});
+    });
 
-smartEatingApp.controller("HomeController", function($scope,$http, $state, $httpParamSerializerJQLike) {
+    smartEatingApp.controller("HomeController", function($scope,$http, $state, $httpParamSerializerJQLike) {
     console.log("home");
     
         $scope.venueList = new Array();
@@ -205,7 +205,7 @@ smartEatingApp.controller("HomeController", function($scope,$http, $state, $http
             if (venueSelected != null) {
                 //This is the API call being made to get the reviews(tips) for the selected place or venue.
                 var handler = $http.get("https://api.foursquare.com/v2/venues/" + venueSelected.id + "/menu?oauth_token=PWEEHVUCPOFMUZ0WOU0TYHXF3WD2AXY5PZ1ISNZIWTSDBE2C&v=20160913");
-console.log(venueSelected.id);
+    console.log(venueSelected.id);
                 handler.success(function (result) {
                     if (result != null && result.response != null && result.response.menu != null &&
                         result.response.menu.menus.items != null) {
