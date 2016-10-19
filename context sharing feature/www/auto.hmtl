@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js" xmlns:background-position="http://java.sun.com/JSP/Page"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Auto suggestion </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="stylesheet" href="https://www.gstatic.com/knowledge/kgsearch/widget/1.0/widget.min.css">
+
+    <script src="https://www.gstatic.com/knowledge/kgsearch/widget/1.0/widget.min.js"></script>
+   
+
+</head>
+<body >
+
+<div  ng-controller="View1Ctrl" style="top: 200px">
+    <div class="menu" id="div_SearchContainer">
+        <h1 align="absolute..." style="color:#323232 ; text-align: left; font-size: 50px;" >Welcome</h1>
+       
+        <input type="text" id="txt_searchFilter" placeholder=" auto suggestion " style="height:30px; font-size:18pt; margin-left: 0px"/><br/><br/>
+        <div>
+            <p> Shareit on </p>
+            <button onClick="fbShare()">Facebook</button>
+            <button onClick="twitterShare()">Twitter</button>
+            <button onClick="whatsappShare()">WhatsApp</button>
+            <button onClick="otherShare()">Other Share</button>
+        </div>
+        <div class="kge-search-picker">
+            <div class="kge-search-picker-inner">
+                <div class="kge-search-picker-header"></div>
+                <div class="kge-search-picker-list jfkScrollable" style="width: 100%;">
+                    <div class="kge-search-picker-list-inner jfkScrollable-inner"></div></div>
+                <div class="kge-search-picker-footer" style="color:#333333, display: none;"><a href="javascript:void(0);"></a></div></div></div>
+        
+    </div>
+   
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="appTest.js"></script>
+<script>
+    var myInput = document.getElementById('txt_searchFilter')
+    var config = {
+        'limit': 10,
+        'maxDescChars': 150,
+
+    };
+    var picker = KGSearchWidget('AIzaSyBElNgR_a3Q4udWtf6ipZskheKCR6EKDbM', myInput, config);
+</script>
+
+</body>
+</html>
