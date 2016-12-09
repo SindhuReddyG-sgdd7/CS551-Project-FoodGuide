@@ -19,6 +19,8 @@ Documentation Links:
 <li>Project Proposal: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Projectproposal.pdf</li>
 <li>Increment 1: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/ProjectIncrement1.pdf</li>
 <li>Increment 2: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/Project%20Increment%202.pdf</li>
+<li>Increment 3: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/ProjectIncrement3.pdf</li>
+<li>Increment 4: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/ProjectIncrement4.pdf</li>
 </ul>
 
 Wiki Page: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/wiki/SmartEating
