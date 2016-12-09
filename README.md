@@ -23,4 +23,8 @@ Documentation Links:
 <li>Increment 4: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/blob/master/Documentation/ProjectIncrement4.pdf</li>
 </ul>
 
+Presentation Link: https://drive.google.com/file/d/0BxlWN1H7ytARZmJkUElEM1ZsYTg/view
+
+Youtube Link: https://www.youtube.com/watch?v=EKLqClTXPWY
+
 Wiki Page: https://github.com/SindhuReddyG-sgdd7/CS551-Project-FoodGuide/wiki/SmartEating
