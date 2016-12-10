@@ -219,7 +219,7 @@ smartEatingApp.controller("RecipeSearchController", function($scope,$http, $stat
             }
         }
     
-    $scope.recipeDetails = function (recipe) {
+    
         
             if (recipe != null && recipe != "") {
                 console.log(recipe);
