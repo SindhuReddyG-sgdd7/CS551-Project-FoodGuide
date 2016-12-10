@@ -109,9 +109,8 @@ console.log("Login");
             }else{
                 
               if (username == data[0].username && password == data[0].password) {
-                       // localStorage.setItem("name" , username);
-                  
-                  /*var User = (function () {
+                                  
+                 
   // Instance stores a reference to the Singleton
   var instance;
 
