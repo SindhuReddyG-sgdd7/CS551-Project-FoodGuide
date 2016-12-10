@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/SindhuGolconda/ASEproject/platforms/android/build/intermediates/assets/debug/www/js/app.js",
+        "C:/Users/SindhuGolconda/ASEproject/plugins/cordova-plugin-device/tests/tests.js",
+        "C:/Users/SindhuGolconda/ASEproject/plugins/cordova-plugin-device/www/device.js"
+    ]
+}

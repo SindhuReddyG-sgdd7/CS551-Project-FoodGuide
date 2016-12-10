@@ -1,0 +1,102 @@
+<ion-view title="Smart Eating">
+    <ion-content class="barc">
+        <br/>
+            
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Get Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Get Recipe</a>
+  <a href="javascript:void(0)" ng-click="Allergic()">Allergic To</a>
+  <a href="javascript:void(0)" ng-click="Translate()">Translate</a>
+  <a href="javascript:void(0)" ng-click="AboutUs()">About Us</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&nbsp;&#9776; </span>
+
+
+        <h2 align="absolute" style="text-align: center; color: #2E86C1">Manage Allergies</h2>
+        
+            <div class="doc-example ionic">
+    <!--<div class="bar bar-header">
+      <div class="h1 title">Allergic to</div>
+    </div>-->
+    <div class="content has-header">
+
+      <ul class="list">
+        <li class="item item-toggle">
+           Dairy
+           <label class="toggle toggle-positive">
+             <input id="Dairy" value="Dairy" type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Eggs
+           <label class="toggle toggle-calm">
+             <input  id="Eggs" value="Eggs" type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Glutten
+           <label class="toggle toggle-balanced">
+             <input  id="Glutten" value="Glutten" type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Wheat
+           <label class="toggle toggle-energized">
+             <input  id="Wheat" value="Wheat" type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Peanut
+           <label class="toggle toggle-assertive">
+             <input id="Peanut" value="Peanut"  type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Sesame
+           <label class="toggle toggle-royal">
+             <input id="Sesame" value="Sesame"  type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Seafood
+           <label class="toggle toggle-dark">
+             <input id="Seafood" value="Seafood" type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+      </ul>
+
+         <center>
+                <button id="btn_getRestaurant" ng-click="AddAllergies()" class="button">Add</button><br/><br/>
+                  </center>
+    </div>
+  </div>
+
+
+    </ion-content>
+</ion-view>

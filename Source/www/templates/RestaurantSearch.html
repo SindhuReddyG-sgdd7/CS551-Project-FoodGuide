@@ -1,0 +1,49 @@
+<ion-view title="Restaurant Search">
+    <ion-content class="barc">
+        
+<br/>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Get Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Get Recipe</a>
+  <a href="javascript:void(0)" ng-click="Allergic()">Allergic To</a>
+  <a href="javascript:void(0)" ng-click="Translate()">Translate</a>
+  <a href="javascript:void(0)" ng-click="AboutUs()">About Us</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&#9776; </span>
+        <h5 align="absolute" style="text-align: center; color: #2E86C1">Search your place of interest!</h5>
+     
+            <div class="restaurantMenu" id="div_SearchContainer">
+                
+                <div style="float:left; margin-left:15px;">
+                <input type="search" id="txt_placeName" placeholder="Enter the Location" style="font-size:12px; width:150px;"/>
+                    </div>
+                
+                <div style="margin-left:180px;">
+                <input type="search" id="txt_searchFilter" ng-keypress="getSuggestion()" placeholder="Food Center" style="width:150px; font-size:12px;"/><br/>
+                </div>
+                
+                <div class="kge-search-picker">
+                    <div class="kge-search-picker-inner">
+                        <div class="kge-search-picker-header"></div>
+                        <div class="kge-search-picker-list jfkScrollable" style="width: 100%;">
+                            <div class="kge-search-picker-list-inner jfkScrollable-inner"></div>
+                        </div>
+                        <div class="kge-search-picker-footer" style="display: none;">
+                            <a href="javascript:void(0);"></a>
+                        </div>
+                    </div>
+                </div>
+                  <center>
+                <button id="btn_getRestaurant" ng-click="getVenues()" class="button">Search</button><br/><br/>
+                  </center> 
+            </div>
+         <div id="accomodationMap"> </div>
+           
+                
+    </ion-content>
+</ion-view>

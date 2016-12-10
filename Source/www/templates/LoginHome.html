@@ -1,0 +1,31 @@
+<ion-view title="Smart Eating">
+    <ion-content class="barcHome">
+        <br/>
+            
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Get Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Get Recipe</a>
+  <a href="javascript:void(0)" ng-click="Allergic()">Allergic To</a>
+  <a href="javascript:void(0)" ng-click="Translate()">Translate</a>
+  <a href="javascript:void(0)" ng-click="AboutUs()">About Us</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&nbsp;&#9776; </span>
+            <h2 align="absolute" style="text-align: center; color: #2E86C1"> Home Page </h2>
+        
+            <div class="padding-left padding-right" id="div_buttons">
+            <center><div class="list">
+                <br/><br/><br/><br/><br/><br/>
+                <button class="button" ng-click="Recipe()" style="width: 200px;">Search Recipe</button><br/><br/><br/>
+                <button class="button" ng-click="Restaurant()" style="width: 200px;">Search Restaurant</button>
+                
+                
+            </div></center>
+            
+        </div>
+    </ion-content>
+</ion-view> 

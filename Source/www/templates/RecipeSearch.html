@@ -1,0 +1,54 @@
+<ion-view title="Smart Eating">
+    <ion-content class="barcRecipe">
+        <br/>
+        
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Get Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Get Recipe</a>
+  <a href="javascript:void(0)" ng-click="Allergic()">Allergic To</a>
+  <a href="javascript:void(0)" ng-click="Translate()">Translate</a>
+  <a href="javascript:void(0)" ng-click="AboutUs()">About Us</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&#9776; </span>
+        <h2 align="absolute" style="text-align: center; color: #2E86C1">Recipes</h2>
+        <div class="transbox" style="border: 2px solid #943126;">
+            <div class="SearchRecipe" id="div_SearchContainer">
+                <h3 style="color:#f23e3f;">&nbsp;&nbsp;Food Item: </h3>
+                <center><input type="text" id="txt_Item" placeholder="Enter the Item" style="font-size:20px; font-color: #943126;"/> <br/>               
+                <button id="btn_getRestaurant" ng-click="getRecipes()" class="button" >Search</button><br/></center><br/>
+            </div>
+            <div id="div_RecipeList" class="RecipeList" style="display:none;">
+                <center><h3 >Top recipes with the given item</h3></center>
+                <ul>
+                    <li ng-repeat="recipe in recipeList" style="font-size: x-medium; color: #943126; text-align: center; list-style: none; list-style-position:inside;">
+                        <b><a href="" ng-click="recipeDetails(recipe)" style="font-size: x-medium; color: #943126; text-align: center;">{{recipe.name}}</a></b>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+            <div id="div_RecipeDetails" class="RecipeDetails" style="display:none;">
+                <a href="" ng-click="back()" style="font-size: x-medium; color: #5e5e5e; text-align: center;">Back to Search Recipe</a>
+                <div><center><h5>{{recipeDetails.name}}</h5></center></div>
+                <div >
+                   <center> <img ng-src="{{recipeDetails.image}}" style="width:150px; height:150px;"/></center>
+                </div>
+                <div id="div_RecipeIngredients">
+                   <center> <h5>Ingredients</h5></center>
+                <ol>
+                <li ng-repeat="ingredient in recipeDetails.ingredients" >
+                    {{ingredient}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                </ol>
+                </div>
+                <br/>
+                
+            </div>
+                    
+    </ion-content>
+</ion-view>

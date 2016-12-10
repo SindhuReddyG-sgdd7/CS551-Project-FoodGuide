@@ -1,0 +1,102 @@
+<ion-view title="Smart Eating">
+    <ion-content class="barc">
+        <br/>
+            
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Get Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Get Recipe</a>
+  <a href="javascript:void(0)" ng-click="Allergic()">Allergic To</a>
+  <a href="javascript:void(0)" ng-click="Translate()">Translate</a>
+  <a href="javascript:void(0)" ng-click="AboutUs()">About Us</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&nbsp;&#9776; </span>
+            <h2 align="absolute" style="text-align: center; color: #2E86C1"> Restaurant Details </h2>
+        
+            <div class="padding-left padding-right" id="div_buttons">
+            <center><div class="list"><br/>
+                <div><label style="font-size: x-large;">Name:&nbsp;</label>
+                    <label id="RestaurantName" style="font-size: x-large;">{{ myFieldLabel }}</label>
+                </div><br/>
+                <button class="button" ng-click="getMenu()" style="width: 200px;">Get Menu</button><br/><br/>
+                <button class="button" ng-click="getReviews()" style="width: 200px;">Get Review</button><br/>
+            </div></center>
+        </div>
+            <center>
+<div id="div_Menu" style="display:none; " class="menuItems">
+    <p ng-model="MenuList">
+        <TABLE BORDER=2 CELLPADDING=4 style="background-color: white;">
+            <TR>
+                <TH style="color: aliceblue; background:#1ab188">MENU</TH>
+                <TH id="ItemHeading" style="color: aliceblue; background:#1ab188; display:none;">Items of {{ headItem }}</TH>
+            </TR>
+            <TR>
+                <TD>
+                    <ul>
+                        <li ng-repeat="menu in MenuList.Menu" style="list-style: none; list-style-position:inside;">
+                            <a href="" ng-click="getItems(menu)" style="font-size: large; color: #333333; text-align: center;">{{menu}}</a>
+                        </li>
+                    </ul>
+                </TD>
+                <TD id="div_ItemList" style="display:none;">
+                    <ul>
+                        <li ng-repeat="item in ItemsList.Items" style="list-style: none; list-style-position:inside;">
+                            <a href="" ng-click="getIngredients(item)" style="font-size: medium; color: #333333; text-align: center;">{{item}}</a>
+
+                        </li>
+                        <li>
+                            <ul id="div_IngredientsList" style="display:none;">
+                                <label>&nbsp;&nbsp;&nbsp;</label>
+                                <li ng-repeat="item in IngredientsList.list" style="list-style: none; list-style-position:inside; display:inline-block">
+                                    {{item}}
+                                    <label>,&nbsp; </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul id="div_ItemImage" style="display:none;">
+                                <label>&nbsp;&nbsp;&nbsp;</label>
+                                <li ng-repeat="item in IngredientsList.list" style="list-style: none; list-style-position:inside; display:inline-block">
+                                    {{item}}
+                                    <label>,&nbsp; </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </TD>
+            </TR>
+        </TABLE>
+        <br/><br/>
+    </p>
+</div>
+<div id="div_ReviewList" style="display:none;" class="ReviewList">
+                <p ng-model="ReviewWithSentiment">
+                    <TABLE BORDER=2 CELLPADDING=4>
+                        <TR>
+                            <TH style="color: aliceblue; background:#1ab188" COLSPAN=2>Sentiment Analysis From Using Alchemy API </TH>
+                        </TR>
+                        <TR>
+                            <TD>Most recent review</TD>
+                            <TD>{{ReviewWithSentiment.reviewText}}</TD>
+                        </TR>
+                        <TR>
+                            <TD>Sentiment of the review</TD>
+                            <TD>{{ReviewWithSentiment.sentiment}}</TD>
+                        </TR>
+                        <TR>
+                            <TD>Sentiment Score of the review</TD>
+                            <TD>{{ReviewWithSentiment.score}}</TD>
+                        </TR>
+                        <TR>
+                            <TH style="color: aliceblue; background:#1ab188" COLSPAN=2 BGCOLOR="#445553">{{ReviewWithSentiment.reviewText}}</TH>
+                        </TR>
+                    </TABLE>
+                </p>
+</div>
+                </center>    
+    </ion-content>
+</ion-view> 
