@@ -1,0 +1,27 @@
+<ion-view title="Home Page">
+    <ion-content class="barc">
+        
+            
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a href="javascript:void(0)" ng-click="RedirectHome()">Home</a>
+  <a href="javascript:void(0)" ng-click="Restaurant()">Restaurant</a>
+  <a href="javascript:void(0)" ng-click="Recipe()">Recipe</a>
+  <a href="javascript:void(0)" ng-click="ChangePassword()">Change Password</a>
+  <a href="javascript:void(0)" ng-click="Logout()">Logout</a>
+</div>
+        
+<span style="font-size:30px;cursor:pointer;top:10px;" ng-click="openNav()">&#9776; </span>
+            
+            <div class="padding-left padding-right">
+            <div class="list">
+                <br/><br/>
+                <button class="button" ng-click="Recipe()">Search Recipe</button><br/><br/>
+                <button class="button" ng-click="Restaurant()">Search Restaurant</button>
+                
+                
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view> 

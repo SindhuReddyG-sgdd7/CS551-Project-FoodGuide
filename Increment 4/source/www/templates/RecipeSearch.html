@@ -1,0 +1,36 @@
+<ion-view title="Recipe Search">
+    <ion-content class="barc">
+        <div class="transbox">
+            <div class="SearchRecipe" id="div_SearchContainer">
+                <h3 align="absolute" style="text-align: center; color: #1ab188">Search Recipes</h3>
+                <input type="text" id="txt_Item" placeholder="Enter the Food Item" />                
+                <button id="btn_getRestaurant" ng-click="getRecipes()">Search</button><br/>
+            </div>
+            <div id="div_RecipeList" class="RecipeList" style="display:none;">
+                <h5 >Top recipes with the given item</h5>
+                <ul>
+                    <li ng-repeat="recipe in recipeList" style="font-size: x-medium; color: #5e5e5e; text-align: center; list-style: none; list-style-position:inside;">
+                        <a href="" ng-click="recipeDetails(recipe)" style="color: #5e5e5e; text-align: center;">{{recipe.name}}</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+            <div id="div_RecipeDetails" class="RecipeDetails" style="display:none;">
+                <a href="" ng-click="back()" style="font-size: x-medium; color: #5e5e5e; text-align: center;">Back to Search Recipe</a>
+                <div><h5>{{recipeDetails.name}}</h5></div>
+                <div >
+                   <center> <img ng-src="{{recipeDetails.image}}" style="width:150px; height:150px;"/></center>
+                </div>
+                <div id="div_RecipeIngredients">
+                    <h5>Ingredients</h5>
+                <ul>
+                <li ng-repeat="ingredient in recipeDetails.ingredients" style="list-style-type: square; float: left">
+                    {{ingredient}}
+                    </li>
+                </ul>
+                    </div>
+            </div>
+                    
+    </ion-content>
+</ion-view>
